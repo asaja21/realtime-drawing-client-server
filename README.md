@@ -8,17 +8,33 @@ The server (Qt) captures mouse drawing events and broadcasts each line segment i
 
 ## Architecture
 
-DrawServer (Qt)              DrawClient (MFC)
+DrawServer (Qt)              
 
-─────────────────            ─────────────────
+─────────────────            
 
-QTcpServer : 4040 port       Winsock / CAsyncSocket
+QTcpServer : 4040 port       
 
-Mouse capture (QChildView)   GDI / GDI+ rendering
+Mouse capture (QChildView)   
 
-Non-persistent rendering     Non-persistent rendering
+Non-persistent rendering     
 
-Broadcast to N clients       Connection state management
+Broadcast to N clients       
+
+
+
+DrawClient (MFC)
+
+─────────────────
+
+Winsock / CAsyncSocket
+
+GDI / GDI+ rendering
+
+Non-persistent rendering
+
+Connection state management
+
+
 
 ## Features
 
