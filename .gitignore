@@ -1,0 +1,27 @@
+# Fichiers de build Visual Studio
+Debug/
+Release/
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.idb
+*.exp
+*.lib
+*.ncb
+*.suo
+*.user
+*.sdf
+*.opensdf
+ipch/
+*.aps
+
+# Fichiers générés par Qt
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+GeneratedFiles/
+
+# Logs de build
+BuildLog.htm
+*.log
